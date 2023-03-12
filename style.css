@@ -11,3 +11,58 @@ body {
     align-items: center;
     justify-content: center;
 }
+
+.diamond {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    transform: rotate(45deg);
+}
+
+span {
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-top: 50px solid yellow;
+    border-right: 50px solid red;
+    border-bottom: 50px solid blue;
+    border-left: 50px solid darkgreen; 
+}
+
+span:nth-child(1) {
+    top: 0;
+    left: 0;
+    border-top-color: transparent;
+    border-right-color: #20bc7d;
+    border-bottom-color: #26c893;
+    border-left-color: transparent;
+
+
+}
+
+span:nth-child(2) {
+    top: 0;
+    right: 0;
+    border-top-color: #1fb67c;
+    border-right-color: #20bc7d;
+    border-bottom-color: #26c893;
+    border-left-color: #55ddb9;
+}
+
+span:nth-child(3) {
+    bottom: 0;
+    left: 0;
+    border-top-color: #1fb67c;
+    border-right-color: #20bc7d;
+    border-bottom-color: #26c893;
+    border-left-color: #55ddb9;
+}
+
+span:nth-child(4) {
+    bottom: 0;
+    right: 0;
+    border-top-color: #1fb67c;
+    border-right-color: #20bc7d;
+    border-bottom-color: #26c893;
+    border-left-color: #55ddb9;
+}
